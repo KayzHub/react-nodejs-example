@@ -9,12 +9,11 @@ A simple full-stack example project with:
 ---
 
 ## Project Structure
-.
-├── api/          # Node.js backend API
-├── my-app/       # React frontend
-├── Dockerfile    # Container build instructions
-├── .dockerignore
-└── .gitignore
+- **api/** – Node.js backend API  
+- **my-app/** – React frontend  
+- **Dockerfile** – Container build instructions  
+- **.dockerignore** – Docker ignore rules  
+- **.gitignore** – Git ignore rules
 ---
 
 ## Prerequisites
