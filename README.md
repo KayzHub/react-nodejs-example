@@ -37,4 +37,6 @@ cd react-nodejs-example
 ## Run with Docker
 ```bash
 docker build -t devjumpstart/demo-app:2.0 .
+docker push devjumpstart/demo-app:2.0
+docker run -d -p 3080:3080 devjumpstart/demo-app:2.0
 ```
