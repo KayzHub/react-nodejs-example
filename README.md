@@ -40,3 +40,20 @@ docker build -t devjumpstart/demo-app:2.0 .
 docker push devjumpstart/demo-app:2.0
 docker run -d -p 3080:3080 devjumpstart/demo-app:2.0
 ```
+
+<img width="760" height="487" alt="image" src="https://github.com/user-attachments/assets/76cc87fe-5611-45e8-a984-4db7234ab673" />
+
+---
+## Also, run with docker-compose.yml
+```yaml
+version: "3.9"
+
+services:
+  app:
+    image: devjumpstart/demo-app:2.0
+    container_name: demo-app
+    ports:
+      - "3080:3080"
+    restart: unless-stopped
+```
+
